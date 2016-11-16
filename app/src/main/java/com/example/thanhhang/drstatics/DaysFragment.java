@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -24,7 +23,7 @@ public class DaysFragment extends Fragment {
     int page;
     static final int ONE_DAY = 1000 * 60 * 60 * 24;
     static final int ONE_WEEK = ONE_DAY * 7;
-    // đây.
+
     long ms = System.currentTimeMillis();
     Calendar a = Calendar.getInstance();
     int thuindex = a.get(Calendar.DAY_OF_WEEK);
@@ -38,9 +37,8 @@ public class DaysFragment extends Fragment {
     }
 
     public DaysFragment() {
-        // Required empty public constructor
-    } // e muốn lặp nó ở đâu
 
+}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
